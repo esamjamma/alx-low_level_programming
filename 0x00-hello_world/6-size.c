@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE -o ${CFILE//'.c'/'.s'}
+gcc -m32 -o sizes sizes.c && ./sizes
